@@ -1,0 +1,153 @@
+//* Importing fonts
+@font-face {
+  font-family: 'Open Sauce Sans';
+  src: url('../fonts/OpenSauceSans-Bold.woff') format('woff2'),
+    url('../fonts/OpenSauceSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sauce Sans';
+  src: url('../fonts/OpenSauceSans-Medium.woff2') format('woff2'),
+    url('../fonts/OpenSauceSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sauce Sans';
+  src: url('../fonts/OpenSauceSans-Regular.woff2') format('woff2'),
+    url('../fonts/OpenSauceSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sauce Sans', sans-serif;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 0px;
+  color: #485b60;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.heading-2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #102226;
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+
+  @media screen and (max-width: 479px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+.heading-3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #102226;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+
+  @media screen and (max-width: 479px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+.heading-4 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #102226;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.heading-5 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #102226;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.container {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: 1060px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-large {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-small {
+  position: relative;
+  max-width: 920px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-extra-small {
+  position: relative;
+  max-width: 620px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.scr-reader {
+  position: absolute;
+  left: -100000000000px;
+  width: 1px;
+}
+
+@media screen and (max-width: 990px) {
+  .overflow-hidden {
+    overflow: hidden;
+  }
+}
